@@ -7,6 +7,7 @@
     <div
       class="w-full max-w-[var(--ui-container)] h-full mx-auto ct-flex-col gap-3"
     >
+    <!-- Logo -->
       <div class="flex items-center gap-1.5">
         <a href="/" class="flex gap-2 items-end">
           <HeaderLogo />
@@ -14,6 +15,10 @@
         </a>
       </div>
     </div>
+
+    <!-- Main menu horizontal -->
+
+    <!-- Icon action -->
   </header>
 </template>
 <style scoped>

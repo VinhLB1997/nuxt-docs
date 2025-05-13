@@ -1,7 +1,9 @@
 <script lang="ts"></script>
 
 <template>
-    <Header />
-    <slot />
+    <Header></Header>
+    <Main>
+        <slot></slot>
+    </Main>
 </template>
 <style scoped></style>
