@@ -1,4 +1,7 @@
-<script lang="ts"></script>
+<script lang="ts">
+import { MainNavRight } from '#components';
+
+</script>
 
 <template>
   <main class="min-height relative">
@@ -6,7 +9,10 @@
         <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
             <MainNavLeft class="lg:col-span-2"/>
             <div class="lg:col-span-8">
-                <slot></slot>
+                <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
+                    <slot></slot>
+                    <MainNavRight />
+                </div>
             </div>
         </div>
     </div>

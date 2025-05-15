@@ -102,3 +102,7 @@ body {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
 }
+
+.border-default {
+  border-color: var(--ui-border);
+}
