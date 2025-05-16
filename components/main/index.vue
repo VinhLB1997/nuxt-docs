@@ -1,26 +1,26 @@
-<script lang="ts">
+<script setup lang="ts">
 import { MainNavRight } from '#components';
 
 </script>
 
 <template>
-  <main class="min-height relative">
-    <div class="w-full max-width mx-auto">
-        <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
-            <MainNavLeft class="lg:col-span-2"/>
-            <div class="lg:col-span-8">
-                <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
-                    <slot></slot>
-                    <MainNavRight />
+    <main class="min-height relative">
+        <div class="w-full max-width mx-auto">
+            <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
+                <MainNavLeft class="lg:col-span-2" />
+                <div class="lg:col-span-8">
+                    <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
+                        <slot></slot>
+                        <MainNavRight/>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-  </main>
+    </main>
 </template>
 <style scoped>
 .min-height {
-  min-height: calc(100vh - var(--ui-header-height));
+    min-height: calc(100vh - var(--ui-header-height));
 }
 
 .max-width {
